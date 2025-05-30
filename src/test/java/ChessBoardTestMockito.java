@@ -1,12 +1,16 @@
-public class ChessBoardTestMockito {
-    import org.junit.Test;
+import org.example.ChessBoard;
+import org.junit.experimental.runners.Enclosed;
+import org.junit.runner.RunWith;
 import org.mockito.Mockito;
-import src.main.ChessBoard;
-
+import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-    public class ChessBoardTestMockito {
+@RunWith(Enclosed.class)
+public class ChessBoardTestMockito {
+
+
+    public static class chessBoardTestMockito {
         @Test
         public void testMockCountFunction() {
             ChessBoard board = Mockito.mock(ChessBoard.class);

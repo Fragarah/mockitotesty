@@ -37,5 +37,13 @@ public class ChessBoard {
             System.out.println();
         }
     }
+    public int getSize() {
+        return size; // Assuming `size` is a field in `ChessBoard`
+    }
+
+    public boolean isOccupied(int i, int j) {
+        return board[i][j];
+    }
+
 }
 

@@ -1,9 +1,10 @@
+import org.example.ChessBoard;
+import org.example.FileHandler;
 import org.junit.Test;
-import src.main.ChessBoard;
-import src.main.FileHandler;
 
 import java.io.IOException;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertTrue;
 
 public class FileHandlerTest {
     @Test
